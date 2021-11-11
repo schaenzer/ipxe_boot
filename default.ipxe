@@ -1,3 +1,9 @@
 #!ipxe
 
+
+echo ${uuid}
+
+sleep 5
+
+
 initrd http://cdn.debian.net/debian/dists/${release}/main/installer-${arch}/current/images/netboot/debian-installer/${arch}/initrd.gz
