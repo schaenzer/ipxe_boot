@@ -7,7 +7,7 @@ set debian_mirror http://deb.debian.org/
 set dir debian/dists/Debian11.1/main/installer-amd64/current/images/netboot/debian-installer/amd64
 
 imgfree
-kernel ${debian_mirror}/${dir}/linux ${install_params} initrd=initrd.magic
+kernel ${debian_mirror}/${dir}/linux ${install_params} initrd=initrd.gz
 initrd ${debian_mirror}/${dir}/initrd.gz
 
 echo
