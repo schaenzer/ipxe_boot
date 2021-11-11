@@ -1,6 +1,6 @@
 #!ipxe
 
-kernel http://debian.proxad.net/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux
+kernel http://debian.proxad.net/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux initrd=initrd.gz
 initrd http://debian.proxad.net/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz
 
 boot
