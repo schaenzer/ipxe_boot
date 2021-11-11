@@ -1,6 +1,7 @@
 #!ipxe
+# url=https://raw.githubusercontent.com/schaenzer/ipxe_boot/main/preseed.cfg
 
-kernel http://debian.proxad.net/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux initrd=initrd.gz vga=788 locale=en_US.UTF-8 keymap=de auto=true priority=critical url=https://raw.githubusercontent.com/schaenzer/ipxe_boot/main/preseed.cfg
-initrd http://debian.proxad.net/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz
+kernel http://deb.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux initrd=initrd.gz vga=788 locale=en_US.UTF-8 keymap=de auto=true priority=critical 
+initrd http://deb.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz
 
 boot
