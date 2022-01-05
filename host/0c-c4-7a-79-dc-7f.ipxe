@@ -1,5 +1,5 @@
 #!ipxe
-set bondmac 52:97:b8:6e:25:32
+set bondmac ba:cf:2b:6d:1d:e7
 
 set preseed-url https://raw.githubusercontent.com/schaenzer/ipxe_boot/main/k3s_worker_preseed.cfg
 
