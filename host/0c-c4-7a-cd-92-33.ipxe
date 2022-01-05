@@ -1,0 +1,9 @@
+#!ipxe
+set bondmac 92:4f:51:43:91:59
+
+set preseed-url https://raw.githubusercontent.com/schaenzer/ipxe_boot/main/k3s_worker_preseed.cfg
+
+kernel http://deb.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux initrd=initrd.gz locale=en_US.UTF-8 keymap=de priority=critical url=${preseed-url} netcfg/choose_interface=${net0/mac} bondmac=${bondmac}
+initrd http://deb.debian.org/debian/dists/stable/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz
+
+boot
