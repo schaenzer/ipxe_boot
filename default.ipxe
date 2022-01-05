@@ -4,6 +4,4 @@ set boot-url https://raw.githubusercontent.com/schaenzer/ipxe_boot/main/host/${m
 
 echo -n Boot from URL: ${boot-url}
 
-prompt Press any key to continue
-
 chain ${boot-url}
